@@ -86,5 +86,9 @@ predictions_batch_val, video_id_batch_val, labels_batch_val, video_batch_val, nu
 video_id_batch, video_batch, num_frames_batch = get_input_data_tensors(
         reader, data_pattern, batch_size)
    
+   ## 做分支
+   再把infer_pre_ensamble 的inferece() 複製到target2
+   重新改 這次為不需要以segment 寫檔
+   tf.io.gfile.glob
     
  
